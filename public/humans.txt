@@ -1,0 +1,7 @@
+/* TEAM */
+Developer: Red
+Website: jpg2pngonline.com
+Purpose: Free Online Image Conversion Tools
+
+/* TECHNOLOGY */
+Built with: React.js, JavaScript, HTML5, CSS3
