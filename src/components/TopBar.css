@@ -26,7 +26,8 @@
 
 .topbar-left img {
   cursor: pointer;
-  height: 45px;
+  height: 38px;
+  margin-left: 20px;
 }
 
 .topbar-middle {

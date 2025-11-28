@@ -10,6 +10,8 @@ import { saveAs } from "file-saver";
 export default function App() {
   const [files, setFiles] = useState([]);
   const [selectedLang, setSelectedLang] = useState("en");
+  const [progress, setProgress] = useState({});
+
   const handleDrop = (e) => {
     e.preventDefault();
     handleFiles(e.dataTransfer.files);
@@ -129,32 +131,7 @@ export default function App() {
       <img src={f.preview} className="preview-img" alt={f.file.name} />
       <p className="preview-filename">{f.file.name}</p>
 
-      {/* INDIVIDUAL CONVERT BUTTON */}
-      <button
-        className="convert-btn"
-        onClick={() => {
-          const img = new Image();
-          img.src = f.preview;
-          img.onload = () => {
-            const canvas = document.createElement("canvas");
-            canvas.width = img.width;
-            canvas.height = img.height;
-
-            const ctx = canvas.getContext("2d");
-            ctx.drawImage(img, 0, 0);
-
-            canvas.toBlob(
-              (blob) => {
-                saveAs(blob, f.file.name.replace(".jpg", ".png"));
-              },
-              "image/png",
-              1
-            );
-          };
-        }}
-      >
-        Convert & Download
-      </button>
+ 
     </div>
   ))}
 </div>

@@ -183,6 +183,7 @@ h2 {
 }
 .horizontal-ad {
     position: relative;
+    background-color: #eaeaea;
     margin: 0 auto;
     padding: 0;
     width: 728px;
@@ -248,8 +249,9 @@ h2 {
 }
 
 .side-banner {
-  width: 160px; /* Google ad width */
+  width: 160px; 
   min-height: 600px;
+  background-color: #eaeaea;
   
   display: flex;
   justify-content: center;
@@ -289,4 +291,25 @@ h2 {
     width: 63px;
     height: 16px;
     padding: 6px 6px;
+}
+.convert-btn {
+  position: relative;
+  overflow: hidden;
+}
+
+/* The overlay container */
+.progress-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 4px;
+  background: rgba(255,255,255,0.3);
+  width: 100%;
+}
+
+/* The progress bar */
+.progress-bar {
+  height: 100%;
+  background: #2e89ff;
+  transition: width 0.3s ease;
 }
