@@ -91,6 +91,18 @@ export default function JpgToPdfPage() {
             onClick={() => document.getElementById("pdfInput").click()}
           >
             <p className="blink-text">Drag & drop JPG files here</p>
+            <svg
+      xmlns="http://www.w3.org/2000/svg"
+      className="upload-icon"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+    >
+      <path d="M4 16v1a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3v-1" />
+      <polyline points="8 12 12 8 16 12" />
+      <line x1="12" y1="8" x2="12" y2="16" />
+    </svg>
             <p style={{ fontSize: "12px", color: "#555" }}>or click to choose files</p>
           </div>
 
@@ -137,6 +149,57 @@ export default function JpgToPdfPage() {
           <GoogleAd slot="2222222222" />
         </div>
       </div>
+      <div className="long">
+  <h2 className="long-h1">JPG to PDF Conversion</h2>
+  <p className="long-p">
+    JPG files are image formats commonly used for photos, screenshots, and online graphics. 
+    PDFs, on the other hand, are document formats designed for easy viewing, printing, and sharing across any device.
+  </p>
+  <p className="long-p">
+    Converting JPG to PDF allows you to turn images into clean, professional documents. 
+    Whether you're creating reports, forms, portfolios, receipts, or multi-page documents, PDF provides better organization and higher compatibility than JPG.
+  </p>
+
+  <h2 className="long-h1">Why should you convert JPG to PDF?</h2>
+  <p className="long-p">
+    PDFs maintain the layout, print quality, and structure of your files. 
+    This makes them ideal for sharing, archiving, emailing, and printing. 
+    Unlike JPGs, PDFs do not lose quality each time they are opened or shared.
+  </p>
+  <p className="long-p">
+    A single PDF can also contain multiple JPG images combined into one file. 
+    This makes it much easier to send a collection of images as one document instead of attaching them individually.
+  </p>
+  <p className="long-p">
+    PDFs are also the preferred format for offices, schools, and businesses because they look the same on all devices—phones, tablets, and computers.
+  </p>
+
+  <h2 className="long-h1">How to convert JPG to PDF for free?</h2>
+  <p className="long-p">
+    First, upload your JPG files using the “UPLOAD FILES” button above. 
+    You can also drag and drop your photos into the box that says "Drop Your Files Here." 
+    Our tool supports uploading multiple JPGs at once.
+  </p>
+  <p className="long-p">
+    After uploading, our converter will automatically turn your images into high-quality PDFs. 
+    Each JPG becomes a clean, printable PDF page. 
+    If you upload multiple images, you can combine them into a single PDF document.
+  </p>
+  <p className="long-p">
+    When the conversion is finished, you can download each PDF individually or download all PDFs at once as a ZIP file. 
+    You can repeat this process anytime with no limitations.
+  </p>
+
+  <h2 className="long-h1">Is it safe to convert JPG to PDF online?</h2>
+  <p className="long-p">
+    Yes — your files are completely safe. Your original JPGs remain on your device and are never modified. 
+    All converted PDFs are automatically deleted from our servers after one hour to protect your privacy.
+  </p>
+  <p className="long-p">
+    This ensures a secure, private, and reliable conversion experience every time you use our tool.
+  </p>
+</div>
+
 
       {/* BOTTOM */}
       <BottomBanner link="https://example.com" />

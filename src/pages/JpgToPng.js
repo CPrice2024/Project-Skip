@@ -57,17 +57,14 @@ export default function App() {
   <TopBar selectedLang={selectedLang} setSelectedLang={setSelectedLang} />
         <div className="long">
           <h2 className="long-h1">JPG to PNG Conversion</h2>
-          <p className="long-p">This free online tool converts your JPG images to PNG format, applying proper compression methods. Unlike other services, this tool does not ask for your email address, offers mass conversion and allows files up to 50 MB.</p>
-          <ul className="long-ul">
-            <li className="header__list-item">Convert JPG to PNG online for free</li>
-            <li className="header__list-item">Batch conversion: convert multiple files at once</li>
-            <li className="header__list-item">Supports files up to 50 MB</li>
-          </ul>
+          <p className="long-p">This free online tool converts your JPG images to PNG format, applying proper compression methods. 
+            </p>
+            <p>Unlike other services, this tool does not ask for your email address, offers mass conversion and allows files up to 50 MB.</p>
+
         </div>  
            <div className="horizontal-ad">
-    <GoogleAd slot="4444444444" />
-    
-  </div>
+            <GoogleAd slot="4444444444" />
+            </div>
 
       <div className="main-layout">
         
@@ -83,10 +80,10 @@ export default function App() {
           <p>Upload JPG files or drag & drop multiple files.</p>
                   {/* Switch navigation */}
                   <div className="button-container">
-                    <Link to="/" className="switch-tool-btn">JPG → PNG</Link>
                     <Link to="/png-to-jpg" className="switch-tool-btn">PNG → JPG</Link>
                     <Link to="/compress-image" className="switch-tool-btn">Compress Image</Link>
                     <Link to="/pdf-to-word" className="switch-tool-btn">PDF → Word</Link>
+                    <Link to="/jpg-to-pdf" className="switch-tool-btn">JPG → PDF</Link>
                     
                   </div>
                   {/* Drag & Drop Box */}
@@ -96,11 +93,23 @@ export default function App() {
                   onDrop={handleDrop}
                   onClick={() => document.getElementById("fileInput").click()}
                   >
+                    
                     <p className="blink-text">Drag & drop files here</p>
-  <p style={{ fontSize: "12px", color: "#555" }}>
-    or click to choose files
-  </p>
-</div>
+                    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      className="upload-icon"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+    >
+      <path d="M4 16v1a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3v-1" />
+      <polyline points="8 12 12 8 16 12" />
+      <line x1="12" y1="8" x2="12" y2="16" />
+    </svg>
+                    <p style={{ fontSize: "12px", color: "#555" }}>
+                      or click to choose Files</p>
+                      </div>
 
 
           {/* Hidden Input */}
@@ -142,8 +151,8 @@ export default function App() {
             </button>
           )}
           {/* Horizontal Google Ad below preview */}
-          <div style={{ marginTop: "20px", textAlign: "center" }}>
-            <GoogleAd slot="3333333333" />
+           <div className="horizontal-ad">
+            <GoogleAd slot="4444444444" />
             </div>
         </div>
         {/* RIGHT SIDE AD */}
@@ -160,12 +169,12 @@ export default function App() {
           <p className="long-p">The biggest reason to convert JPG files to PNG is to create transparency support. If you have an image with a lot of white space that you’d like to remove in editing software, you won’t be able to do it. JPGs must have color information within every pixel, so empty pixels are usually filled with black or white colors.</p>
           <p className="long-p">PNGs also don’t get compressed. So if you’re uploading a PNG to a service that compresses images, your PNG upload will look the same as it does on your computer. This can be helpful if you have a very special or specific image that you want to be preserved.</p>
           <p className="long-p">However, you should beware of converting JPG to PNG if you want to eventually print the image. Since PNG files don’t contain CMYK information, printing them is tricky. We’d advise keeping the original JPG if you think you might want to print it in the future.</p>
-          <h3 className="long-h1">How to convert PNG files to JPG for free?</h3>
+          <h2 className="long-h1">How to convert PNG files to JPG for free?</h2>
           <p className="long-p">First, you’ll need to upload a JPG file into our tool above. Hit the “UPLOAD FILES” button and find your JPG file(s) to get started. You can also drag and drop your files into the box that says “Drop Your Files Here”. Keep in mind, however, that you can only upload up to 20 files at one time.</p>
           <p className="long-p">Once uploaded, you’ll see our tool convert the files in real time. When finished, you can download each of them one-by-one by clicking the “DOWNLOAD” button under each image. If you have a lot of them, you can save time by downloading them all at once in ZIP format. Just hit the “DOWNLOAD ALL” button to do so.</p>
           <p className="long-p">If after uploading your files you still want to do more conversions, that’s OK! You can repeat this process as many times as you need. Just keep in mind you can only convert in batches of 20 at the most.</p>
           <p className="long-p">Once you’ve converted your files, you have one hour to download them. Be sure to download your files before this time limit is over, as you will need to do your conversion again if you wait too long.</p>
-          <h4 className="long-h1">Is it safe to convert JPG to PNG online?</h4>
+          <h2 className="long-h1">Is it safe to convert JPG to PNG online?</h2>
           <p className="long-p">It is totally safe to use our tool to convert your files. Your original file remains untouched on your phone, tablet, or computer, so you can always go back to the original if the converted file doesn’t work for you.</p>
           <p className="long-p">Additionally, after you convert and download your files, they are deleted from our servers after one hour. This ensures that your files are not stored indefinitely and helps protect your privacy.</p>
         </div>

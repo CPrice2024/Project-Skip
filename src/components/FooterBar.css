@@ -1,12 +1,16 @@
+/* =========================
+   Footer Layout
+========================= */
 .footer-container {
   width: 100%;
   background: #363636;
   color: #fff;
-  padding: 40px 0px;
+  padding: 25px 0px;
   margin-top: 50px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  gap: 20px;
 }
 
 .footer-section {
@@ -35,4 +39,47 @@
 .footer-copy {
   color: #aaa;
   font-size: 10px;
+  margin-top: 20px;
+}
+
+/* =========================
+   Mobile Responsive
+========================= */
+@media (max-width: 900px) {
+  .footer-section {
+    width: 150px;
+    margin-left: 20px;
+  }
+
+  .footer-section h3 {
+    font-size: 15px;
+  }
+
+  .footer-section a {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 0px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 15px;
+    gap: 15px;
+  }
+
+  .footer-section {
+    width: 100%;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .footer-section a {
+    font-size: 12px;
+  }
+
+  .footer-copy {
+    font-size: 12px;
+    text-align: center;
+  }
 }

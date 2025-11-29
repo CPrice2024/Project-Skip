@@ -105,7 +105,7 @@ export default function CompressImagePage() {
               type="range"
               min="0.1"
               max="1"
-              step="0.1"
+              step="0.01"
               value={quality}
               onChange={(e) => setQuality(parseFloat(e.target.value))}
             />
@@ -120,6 +120,18 @@ export default function CompressImagePage() {
             onClick={() => document.getElementById("compressInput").click()}
           >
             <p className="blink-text">Drag & drop files here</p>
+            <svg
+      xmlns="http://www.w3.org/2000/svg"
+      className="upload-icon"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+    >
+      <path d="M4 16v1a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3v-1" />
+      <polyline points="8 12 12 8 16 12" />
+      <line x1="12" y1="8" x2="12" y2="16" />
+    </svg>
             <p style={{ fontSize: "12px", color: "#555" }}>
               or click to choose files
             </p>
@@ -182,7 +194,7 @@ Lossy compression removes less important details to greatly reduce size, but thi
                 <p className="long-p">The size of an image can vary depending on how it was created. For example, a JPG captured with a professional DSLR camera can be several dozen megabytes—much larger than what you may need for everyday use. In such cases, compressing the image can be extremely helpful.
 
 Similarly, photos stored on your phone can take up significant space on your device. Large image files may even limit how many new photos you can take. Compressing these images can free up valuable storage and help your device run more efficiently.</p>
-                <h3 className="long-h1">How does the image compressor work?</h3>
+                <h2 className="long-h1">How does the image compressor work?</h2>
                   <p className="long-p">This tool uses lossy compression to reduce image file sizes. When you upload an image, it’s drawn onto an HTML5 canvas element, which allows us to manipulate the image data directly in your browser. By adjusting the quality parameter when exporting the image from the canvas, we can significantly reduce the file size while maintaining acceptable visual quality. You can control the compression level using the slider, balancing between file size and image clarity according to your needs.</p>
 
  </div>

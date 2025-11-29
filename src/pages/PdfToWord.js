@@ -93,6 +93,18 @@ export default function PdfToWordPage() {
               onClick={() => document.getElementById("pdfInput").click()}
             >
               <p className="blink-text">Drag & Drop PDF files</p>
+              <svg
+      xmlns="http://www.w3.org/2000/svg"
+      className="upload-icon"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+    >
+      <path d="M4 16v1a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3v-1" />
+      <polyline points="8 12 12 8 16 12" />
+      <line x1="12" y1="8" x2="12" y2="16" />
+    </svg>
               <p style={{ fontSize: "12px", color: "#555" }}>
                 or click to upload
               </p>
@@ -157,7 +169,7 @@ export default function PdfToWordPage() {
                   <p className="long-p">Yes. Our tool preserves the original layout, fonts, images, and formatting as accurately as possible. Most standard PDFs convert into fully editable Word documents without losing structure.</p>
      <h2 className="long-h1">Will my files be safe during the conversion?</h2>
                   <p className="long-p">Absolutely. All conversions happen securely, and your files are automatically deleted from our server after processing. We do not store, share, or access your documents beyond the conversion task.</p>
-<h3 className="long-h1">Can I convert scanned PDFs to Word?</h3>
+<h2 className="long-h1">Can I convert scanned PDFs to Word?</h2>
                   <p className="long-p">Currently, our PDF to Word converter does not support OCR (Optical Character Recognition) for scanned documents. Only text-based PDFs can be converted accurately. For scanned PDFs, consider using dedicated OCR software.</p> 
      </div>
 

@@ -91,6 +91,18 @@ export default function PngToJpgPage() {
             onClick={() => document.getElementById("fileInputPng").click()}
           >
             <p className="blink-text">Drag & drop files here</p>
+            <svg
+      xmlns="http://www.w3.org/2000/svg"
+      className="upload-icon"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+    >
+      <path d="M4 16v1a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3v-1" />
+      <polyline points="8 12 12 8 16 12" />
+      <line x1="12" y1="8" x2="12" y2="16" />
+    </svg>
             <p style={{ fontSize: "12px", color: "#555" }}>
               or click to choose files
             </p>
@@ -177,7 +189,7 @@ export default function PngToJpgPage() {
                 <p className="long-p">PNG files are high-quality and often large because they support transparency. JPG files are smaller and optimized for web use. Converting PNG to JPG helps reduce file size while keeping good visual quality—perfect for uploading or sharing faster.</p>
                 <h2 className="long-h1">Will converting PNG to JPG remove transparency?</h2>
                 <p className="long-p">Yes. JPG does not support transparency. Any transparent areas in your PNG will be filled with white (or your chosen background color if supported). The rest of the image stays the same.</p>
-                <h3 className="long-h1">Is there any quality loss when converting PNG to JPG?</h3>
+                <h2 className="long-h1">Is there any quality loss when converting PNG to JPG?</h2>
                 <p className="long-p">A little. JPG uses lossy compression, which slightly reduces image quality to make the file smaller. However, our tool optimizes the compression level so you get a good balance between quality and size.</p>  
               </div>
 
