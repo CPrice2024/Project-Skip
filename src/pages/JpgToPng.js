@@ -147,7 +147,7 @@ export default function App() {
           {/* Convert Button */}
           {files.length > 0 && (
             <button className="convert-btn" onClick={handleConvert}>
-              Convert & Download PNGs
+              Download
             </button>
           )}
           {/* Horizontal Google Ad below preview */}

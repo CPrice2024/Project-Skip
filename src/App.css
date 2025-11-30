@@ -12,7 +12,7 @@
     display: flex;
     justify-content: space-between;
     gap: 10px;
-    width: 90%;
+    width: 85%;
 }
 
 .main-content {
@@ -28,6 +28,7 @@
   background-color: #f7f7f7a8;
   display: flex;
   justify-content: center;
+  align-self: stretch;
   align-items: flex-start;
   position: sticky;
   top: 20px;
@@ -52,16 +53,31 @@
 ========================= */
 .drop-zone {
     margin-top: 20px;
-    padding: 60px;
-    align-self: stretch;
+    padding: 60px 0;
     display: flex;
     flex-flow: row;
     border: 2px dashed #42a1dc;
     border-radius: 15px;
     cursor: pointer;
-    transition: 0.3s 
-ease;
+    transition: 0.3s;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 16px;
+    color: #333;
+    font-weight: 500;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
 }
+.center-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
+} 
 
 .drop-zone:hover {
   background: #ededed88;
@@ -126,9 +142,12 @@ p {
 
 .preview-list {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 12px;
   margin-top: 20px;
+  align-self: stretch;
+
+
 }
 
 .preview-item {
@@ -136,14 +155,21 @@ p {
   background: #f8f8f8;
   padding: 8px;
   border-radius: 8px;
+  align-self: stretch;
   text-align: center;
   font-size: 12px;
   box-shadow: 0 0 8px rgba(0,0,0,0.176);
+}
+element.style {
+    height: auto !important;
+    align-self: stretch;
+
 }
 
 .preview-img {
   width: 100%;
   height: auto;
+  align-self: stretch;
   object-fit: cover;
   border-radius: 4px;
   margin: 0 auto;
@@ -177,6 +203,7 @@ p {
   .preview-img {
     width: 90%;
     font-size: 10px;
+    border-radius: 4px;
   }
 }
 @media (max-width: 600px) {
@@ -201,17 +228,18 @@ p {
    Buttons
 ========================= */
 .convert-btn {
-  margin-top: 6px;
-  padding: 6px 12px;
-  font-size: 12px;
-  background-color: #497887;
-  color: #fff;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-  position: relative;
-  overflow: hidden;
-  margin-left: 137px;
+    background-color: #1a8bb3;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 6px 12px;
+    font-size: 11px;
+    cursor: pointer;
+    transition: background-color 0.3s 
+ease;
+    width: auto;
+    margin-top: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .convert-btn:hover {
@@ -424,7 +452,7 @@ color: #0068ff;
 @media (max-width: 800px) {
   .drop-zone {
         padding: 40px;
-        align-self: stretch;
+        align-self: auto;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -433,7 +461,7 @@ color: #0068ff;
 @media (max-width: 500px) {
   .drop-zone {
         padding: 30px;
-        align-self: stretch;
+        align-self: auto;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -469,21 +497,21 @@ color: #0068ff;
 @media (max-width: 600px) {
   .drop-zone {
         padding: 20px;
-        align-self: stretch;
+        align-self: auto;
         display: flex;
         justify-content: center;
         align-items: center;
-        margin: 5px;
   }
   
 
-  .preview-list {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 12px;
-    margin-top: 20px;
-    
-  }
+    .preview-list {
+        grid-template-columns: repeat(2, 1fr);
+        align-self: auto;
+        display: flow-root;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
 
   .preview-item {
     font-size: 11px;
@@ -492,7 +520,7 @@ color: #0068ff;
 
   .convert-btn {
     width: auto;
-    font-size: 14px;
+    font-size: 12px;
     padding: 8px 12px;
   }
 
@@ -519,7 +547,6 @@ color: #0068ff;
     font-size: 12px;
     padding: 6px 10px;
     width: auto;
-    margin-left: 137px;
   }
 
   .preview-item {

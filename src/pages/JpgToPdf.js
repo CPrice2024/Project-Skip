@@ -135,7 +135,7 @@ export default function JpgToPdfPage() {
           {/* Convert Button */}
           {files.length > 0 && (
             <button className="convert-btn" onClick={createPDF}>
-              Convert to PDF
+              download
             </button>
           )}
 

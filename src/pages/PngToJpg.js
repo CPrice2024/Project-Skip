@@ -159,7 +159,7 @@ export default function PngToJpgPage() {
                     };
                   }}
                 >
-                  Convert & Download
+                  Download
                 </button>
               </div>
             ))}
@@ -167,7 +167,7 @@ export default function PngToJpgPage() {
 
           {files.length > 0 && (
             <button className="convert-btn" onClick={handleConvert}>
-              Convert & Download JPGs
+              Download all
             </button>
           )}
 

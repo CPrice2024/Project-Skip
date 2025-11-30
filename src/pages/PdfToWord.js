@@ -145,7 +145,7 @@ export default function PdfToWordPage() {
                     className="convert-btn"
                     onClick={() => convertPdfToWord(f.file)}
                   >
-                    Convert to Word
+                   download
                   </button>
                 </div>
               ))}

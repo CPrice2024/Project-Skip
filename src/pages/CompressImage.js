@@ -166,7 +166,7 @@ export default function CompressImagePage() {
 
           {files.length > 0 && (
             <button className="convert-btn" onClick={handleCompressAll}>
-              Compress & Download
+              Download
             </button>
           )}
 
