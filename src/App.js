@@ -14,11 +14,14 @@ import TermsOfServicePage from "./pages/TermsOfServicePage";
 
 
 
+
+
 export default function App() {
   return (
     <Router>
       <Routes>
         <Route path="/" element={<JpgToPngPage />} />
+        <Route path="/jpg-to-png" element={<JpgToPngPage />} />
         <Route path="/png-to-jpg" element={<PngToJpgPage />} />
         <Route path="/compress-image" element={<CompressImagePage />} />
         <Route path="/jpg-to-pdf" element={<JpgToPdfPage />} />
