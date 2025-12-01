@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 
 export default function CompressImagePage() {
   const [files, setFiles] = useState([]);
-  const [quality, setQuality] = useState(0.7); // default compression level
+  const [quality, setQuality] = useState(0.8); 
 
   const handleDrop = (e) => {
     e.preventDefault();
@@ -94,7 +94,6 @@ export default function CompressImagePage() {
                     <Link to="/" className="switch-tool-btn">JPG → PNG</Link>
                     <Link to="/png-to-jpg" className="switch-tool-btn">PNG → JPG</Link>
                     <Link to="/compress-image" className="switch-tool-btn">Compress Image</Link>
-                    <Link to="/pdf-to-word" className="switch-tool-btn">PDF → Word</Link>
                     
                   </div>
 

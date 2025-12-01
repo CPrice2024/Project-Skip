@@ -25,7 +25,6 @@ function TopBanner() {
         <Link to="/png-to-jpg" className="topbar-link">PNG → JPG</Link>
         <Link to="/compress-image" className="topbar-link">Compress Image</Link>
         <Link to="/jpg-to-pdf" className="topbar-link">JPG → PDF</Link>
-        <Link to="/pdf-to-word" className="topbar-link">PDF → Word</Link>
       </div>
 
       {/* RIGHT - LANGUAGE SELECTOR */}

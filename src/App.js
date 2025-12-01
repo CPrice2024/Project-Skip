@@ -5,7 +5,6 @@ import CompressImagePage from "./pages/CompressImage";
 import JpgToPdfPage from "./pages/JpgToPdf";
 import React from "react";
 import "./App.css";
-import PdfToWordPage from "./pages/PdfToWord";
 import AboutPage from "./pages/AboutPage";
 import OurTeamPage from "./pages/OurTeamPage";
 import ContactPage from "./pages/ContactPage";
@@ -25,7 +24,6 @@ export default function App() {
         <Route path="/png-to-jpg" element={<PngToJpgPage />} />
         <Route path="/compress-image" element={<CompressImagePage />} />
         <Route path="/jpg-to-pdf" element={<JpgToPdfPage />} />
-        <Route path="/pdf-to-word" element={<PdfToWordPage />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/team" element={<OurTeamPage />} />
         <Route path="/contact" element={<ContactPage />} />

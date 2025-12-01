@@ -80,7 +80,6 @@ export default function JpgToPdfPage() {
                     <Link to="/png-to-jpg" className="switch-tool-btn">PNG → JPG</Link>
                     <Link to="/compress-image" className="switch-tool-btn">Compress</Link>
                     <Link to="/jpg-to-pdf" className="switch-tool-btn active-btn">JPG → PDF</Link>
-                    <Link to="/pdf-to-word" className="switch-tool-btn">PDF → Word</Link>
                     
                   </div>
 

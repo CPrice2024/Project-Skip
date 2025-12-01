@@ -10,7 +10,6 @@ import { saveAs } from "file-saver";
 export default function App() {
   const [files, setFiles] = useState([]);
   const [selectedLang, setSelectedLang] = useState("en");
-  const [progress, setProgress] = useState({});
 
   const handleDrop = (e) => {
     e.preventDefault();
@@ -82,7 +81,6 @@ export default function App() {
                   <div className="button-container">
                     <Link to="/png-to-jpg" className="switch-tool-btn">PNG → JPG</Link>
                     <Link to="/compress-image" className="switch-tool-btn">Compress Image</Link>
-                    <Link to="/pdf-to-word" className="switch-tool-btn">PDF → Word</Link>
                     <Link to="/jpg-to-pdf" className="switch-tool-btn">JPG → PDF</Link>
                     
                   </div>
