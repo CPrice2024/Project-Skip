@@ -56,11 +56,9 @@ export default function PngToJpgPage() {
       <TopBanner />
 
       <div className="long">
-        <h2 className="long-h1">PNG to JPG Converter</h2>
-        <p className="long-p">
-          Transform PNG images to JPG format and convert multiple PNG to JPG online at once.
-        </p>
-
+        <h1 className="long-h1">PNG2JPGOnline – Convert PNG to JPG Instantly</h1>
+        <p className="long-p">PNG2JPGOnline is a free online PNG to JPG converter that allows you to convert images instantly. </p>
+        <p className="long-p">Convert PNG to JPG with high quality, no signup, and unlimited usage.</p> 
       </div>
 
       <div className="horizontal-ad">

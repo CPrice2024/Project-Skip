@@ -58,8 +58,10 @@ export default function JpgToPdfPage() {
       <TopBanner />
 
       <div className="long">
-        <h2 className="long-h1">JPG to PDF Converter</h2>
-        <p className="long-p">Free JPG to PDF converter. Combine and convert multiple images into a single PDF in seconds.</p>
+        <h1 className="long-h1">JPG2PNGOnline – Convert JPG to PDF Instantly</h1>
+        <p className="long-p">JPG2PDFOnline is a free online JPG to PDF converter that allows you to convert images instantly. 
+          </p>
+        <p className="long-p">Convert JPG to PDF with high quality, no signup, and unlimited usage.</p>
       </div>
 
       <div className="horizontal-ad">
@@ -73,12 +75,12 @@ export default function JpgToPdfPage() {
 
         {/* CENTER */}
         <div className="center-box">
-          <h1>Convert JPG Files to PDF</h1>
+          <h1>JPG to PDF Converter</h1>
           <p>Upload JPG files or drag & drop multiple images.</p>
                   {/* Switch navigation */}
                   <div className="button-container">
                     <Link to="/png-to-jpg" className="switch-tool-btn">PNG → JPG</Link>
-                    <Link to="/compress-image" className="switch-tool-btn">Compress</Link>
+                    <Link to="/compress-image" className="switch-tool-btn">Compress Image</Link>
                     <Link to="/jpg-to-pdf" className="switch-tool-btn active-btn">JPG → PDF</Link>
                     
                   </div>

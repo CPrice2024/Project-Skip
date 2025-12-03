@@ -55,24 +55,18 @@ export default function App() {
 {/* TOP BAR WITH LANGUAGE */}
   <TopBar selectedLang={selectedLang} setSelectedLang={setSelectedLang} />
         <div className="long">
-          <h2 className="long-h1">JPG to PNG Conversion</h2>
-          <p className="long-p">This free online tool converts your JPG images to PNG format, applying proper compression methods. 
-            </p>
-            <p>Unlike other services, this tool does not ask for your email address, offers mass conversion and allows files up to 50 MB.</p>
-
+        <h1>JPG2PNGOnline – Convert JPG to PNG Instantly</h1>
+          <p className="long-p">JPG2PNGOnline is a free online JPG to PNG converter that allows you to convert images instantly. </p>
+           <p className="long-p">Convert JPG to PNG with high quality, no signup, and unlimited usage.</p>
         </div>  
            <div className="horizontal-ad">
             <GoogleAd slot="4444444444" />
             </div>
-
-      <div className="main-layout">
-        
- 
+            <div className="main-layout">
         {/* LEFT SIDE AD */}
         <div className="side-banner">
           <GoogleAd slot="1111111111" />
         </div>
-
         {/* CENTER CONTENT */}
         <div className="center-box">
           <h1>JPG to PNG Converter</h1>

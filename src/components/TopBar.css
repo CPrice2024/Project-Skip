@@ -68,17 +68,6 @@
 /* =========================
    Headings
 ========================= */
-h1 {
-  display: contents;
-  color: #323232;
-  font-size: 2em;
-  font-style: italic;
-  font-weight: bold;
-  margin: 0em 0;
-  cursor: default;
-  align-self: stretch;
-}
-
 /* =========================
    Mobile Responsive
 ========================= */

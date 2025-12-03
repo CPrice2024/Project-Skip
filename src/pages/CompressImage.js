@@ -69,10 +69,11 @@ export default function CompressImagePage() {
       <TopBanner />
 
       <div className="long">
-        <h2 className="long-h1">Compress Images Online</h2>
-        <p className="long-p">
-          Reduce image file size instantly while keeping high quality. Supports JPG, PNG, and more.
+        <title>JPG2PNGOnline – Free image compression (Fast & High Quality)</title>
+        <h1 className="long-h1">Compress Images Online Instantly</h1>
+        <p className="long-p">Use this free online image compressor to reduce the file size of your JPG, PNG, and WEBP images without losing quality.
         </p>
+        <p className="long-p">No sign-up required, unlimited usage, and high-speed processing right in your browser.</p>  
 
 
       </div>
@@ -93,7 +94,7 @@ export default function CompressImagePage() {
                   <div className="button-container">
                     <Link to="/" className="switch-tool-btn">JPG → PNG</Link>
                     <Link to="/png-to-jpg" className="switch-tool-btn">PNG → JPG</Link>
-                    <Link to="/compress-image" className="switch-tool-btn">Compress Image</Link>
+                    <Link to="/jpg-to-pdf" className="switch-tool-btn">JPG → PDF</Link>
                     
                   </div>
 
