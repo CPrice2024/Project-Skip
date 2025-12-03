@@ -69,8 +69,7 @@ export default function CompressImagePage() {
       <TopBanner />
 
       <div className="long">
-        <title>JPG2PNGOnline – Free image compression (Fast & High Quality)</title>
-        <h1 className="long-h1">Compress Images Online Instantly</h1>
+        <h1 className="long-h1">JPG2PNGOnline – Free image compression (Fast & High Quality)</h1>
         <p className="long-p">Use this free online image compressor to reduce the file size of your JPG, PNG, and WEBP images without losing quality.
         </p>
         <p className="long-p">No sign-up required, unlimited usage, and high-speed processing right in your browser.</p>  

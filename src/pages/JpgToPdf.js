@@ -59,7 +59,7 @@ export default function JpgToPdfPage() {
 
       <div className="long">
         <h1 className="long-h1">JPG2PNGOnline – Convert JPG to PDF Instantly</h1>
-        <p className="long-p">JPG2PDFOnline is a free online JPG to PDF converter that allows you to convert images instantly. 
+        <p className="long-p">JPG2PNGOnline is a free online JPG to PDF converter that allows you to convert images instantly. 
           </p>
         <p className="long-p">Convert JPG to PDF with high quality, no signup, and unlimited usage.</p>
       </div>
